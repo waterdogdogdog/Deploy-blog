@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 뉴스</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+        }
+
+        .main-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #eee;
+        }
+
+        .main-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .date {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+        }
+
+        .category-box {
+            background-color: #f8f0ff;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+
+        .category-box h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .category-box p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .article-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .article-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .article-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .news-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .text-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        @media (min-width: 768px) {
+            .article-content {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .news-image {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .main-header h1 {
+                font-size: 2rem;
+            }
+            
+            .article-title {
+                font-size: 1.5rem;
+            }
+            
+            .article-subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>오늘의 뉴스</h1>
+            <p class="date">2025년 3월 | 제12호</p>
+        </header>
+        <main>
+            <article class="news-article">
+                <div class="article-header">
+                    <div class="category-box">
+                        <h2>풍선 근육 무용론? 헬스장이 말라간다</h2>
+                    </div>
+                    <h3 class="article-title">경기 침체와 민심 변화로 헬스장 폐업 증가</h3>
+                    <p class="article-subtitle">헬스장 폐업률 약 70%, 창업 1년 이내 문 닫는 경우 많아</p>
+                </div>
+                <div class="article-content">
+                    <img src="news2.png" alt="뉴스 이미지" class="news-image">
+                    <div class="text-content">
+                        <p>유명 헬스 유튜버들도 헬스장 폐업</p>
+                        <p>헬스장 회원권 가격 하락, 과열 경쟁 심화</p>
+                        <p>헬스장 관련 피해 구제 신청 건수 증가</p>
+                        <p>사전 판매로 인한 소비자 피해 사례 빈번</p>
+                        <p>스테로이드 사용 증가로 헬스장 이미지 악화</p>
+                        <p>보디빌딩 부상 경험 비율 높음</p>
+                        <p>헬스장 이용료 소득공제 등 유인 정책 도입</p>
+                        <p>공정위, 헬스장 관련 제도 개선 추진</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
